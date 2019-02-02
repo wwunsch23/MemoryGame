@@ -7,7 +7,8 @@
   {
     "id": 2,
     "name": "London Tower Bridge",
-    "image": "https://www.londonpass.com/siteimg/newpages/604141591_TowerBridge-final.jpg"
+    "imageOrig": "https://www.londonpass.com/siteimg/newpages/604141591_TowerBridge-final.jpg",
+    "image": "https://factsforkids.co/wp-content/uploads/2018/01/tower-bridge-4.jpg"
   },
   {
     "id": 3,
