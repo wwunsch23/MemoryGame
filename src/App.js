@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./components/Header";
 import GameBoard from "./components/GameBoard";
 import GameCard from "./components/GameCard";
+import Footer from "./components/Footer";
 import buildings from "./gameImages.json";
 
 class App extends Component {
@@ -73,6 +74,7 @@ class App extends Component {
               />
             ))}
         </GameBoard>
+        <Footer />
       </div>
     );
   }
