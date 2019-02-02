@@ -12,7 +12,8 @@ class App extends Component {
     topScore: 0,
     message: "",
     gamePieces: buildings,
-    clickedItems: []
+    clickedItems: [],
+    guessStyle: ""
   };
 
   addClickedItem = id => {
@@ -33,7 +34,8 @@ class App extends Component {
       this.setState({
         currentScore: 0,
         message: "You Guessed Incorrectly",
-        clickedItems: []
+        clickedItems: [],
+        guessStyle: "incorrect"
       });
     } else {
       // push the value to clickecItems array
@@ -41,7 +43,8 @@ class App extends Component {
       // add 1 to the score and update the message
       this.setState({
         message: "You Guessed Correctly!",
-        currentScore: this.state.currentScore + 1
+        currentScore: this.state.currentScore + 1,
+        guessStyle: "correct"
       });
       //check if current score > top score
       if (this.state.currentScore >= this.state.topScore) {
@@ -57,6 +60,7 @@ class App extends Component {
           currentScore={this.state.currentScore}
           topScore={this.state.topScore}
           message={this.state.message}
+          guessStyle={this.state.guessStyle}
         />
 
         <GameBoard>
