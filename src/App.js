@@ -10,10 +10,10 @@ class App extends Component {
   state = {
     currentScore: 0,
     topScore: 0,
-    message: "",
+    message: "Click an Image to Start",
     gamePieces: buildings,
     clickedItems: [],
-    guessStyle: ""
+    guessStyle: "text-white"
   };
 
   addClickedItem = id => {
